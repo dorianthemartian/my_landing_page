@@ -1,0 +1,1 @@
+This is my first assignment with Coding Temple - A Landing Page.
