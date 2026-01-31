@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .nav-container {
@@ -14,7 +15,6 @@
     background-color: black;
 }
 
-
 li a {
     text-decoration: none;
     padding: 4px;
@@ -24,12 +24,16 @@ li a {
     list-style: none;
     display: flex;
     gap: 4px;
+    font-size: 1.2em;
 }
 
 .nav-links a {
     color: white;
-    text-decoration: none;
-    
+    text-decoration: none;   
+}
+
+.nav-links a:hover {
+    color: rgb(187, 0, 0);
 }
 
 img {
@@ -37,15 +41,17 @@ img {
     object-fit: cover;
 }
 
-
 .hero-container {
     display: flex;
     justify-content: center;
+    background-color: #f7eee4;
 }
 
 .hero {
-    width: 300px;
-    padding: 20px 0;
+    width: 400px;
+    box-shadow: 0 4px 8px rgb(81, 81, 81);
+    background-color: rgb(234, 234, 234);
+    margin: 30px;
 }
 
 .hero img {
@@ -54,8 +60,21 @@ img {
     object-fit: cover;
 }
 
-p{
-    padding: 10px;
+.projects-title {
+    background-color: #f7eee4; 
+    display: flex;
+    justify-content: center;
+}
+
+.projects-title h3 {
+    width: 600px;
+    background-color: rgb(234, 234, 234);
+    box-shadow: 0 4px 8px rgb(81, 81, 81);
+    margin: 30px;
+}
+
+p {
+    padding: 0 10px 10px 10px;
 }
 
 .projects-grid {
@@ -63,12 +82,15 @@ p{
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    padding: 20px 0;
+    background-color: #f7eee4;   
 }
 
 .project {
     width: 300px;
     overflow: hidden;
+    box-shadow: 0 4px 8px rgb(81, 81, 81);
+    background-color: rgb(234, 234, 234);
+    margin: 30px;
 }
 
 .project img {
@@ -79,6 +101,9 @@ p{
 
 h3 {
     text-align: center;
+    color: rgb(187, 0, 0);
+    padding: 6px;
+    font-size: 2em;
 }
 
 
@@ -89,6 +114,11 @@ h3 {
     padding: 20px;
     background-color: black;
     color: white;
+    font-size: 1.3em;
+}
+
+.footer p {
+    padding: 0;
 }
 
 
