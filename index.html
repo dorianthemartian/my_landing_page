@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Landing Page</title>
-    <link rel="stylesheet" href="style.css" class="stylesheet">
+    <link rel="stylesheet" href="styles.css" class="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <nav>
         <div class="nav-container">
-            <h2>My Landing Page</h2> <!--This is my Landing Page. What color scheme should we use? Black, gray and red?-->
-            <ul>
+            <h2>My Landing Page</h2> <!--This is my Landing Page. What color 
+            scheme should we use? Black, gray and red? Also, should I change title
+            to my journey? Or something else?-->
+            <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Me</a></li>
                 <li><a href="#">Projects</a></li>
@@ -20,45 +22,50 @@
         </div>
     </nav>
     <div class="middle-container">
-        <div class="hero">
-            <img src="./images/Meditation.png" alt="A Japanese painting of a Samurai meditating."> 
-            <p>I have been, and will always be, my most important and my most difficult project.</p>
-            <p>"Shippai wo kurikaesu koto de, seikou ni itaru." Repeated failures lead to success. I have tried (and failed) many times 
-                to complete a software engineering course. This time around, I will finish - even if it kills me.</p>     
+        <div class="hero-container">
+            <div class="hero">
+                <img src="./images/Meditation.png" alt="A Japanese painting of a Samurai meditating."> 
+                <p>I have been, and will always be, my most important and my most difficult project.</p>
+                <p>"Shippai wo kurikaesu koto de, seikou ni itaru." Repeated failures lead to success. I have tried (and failed) many times 
+                    to complete a software engineering course. This time around, I will finish - even if it kills me.</p>     
+            </div>
         </div>
 
         <div class="projects"> <!--Each project will have to do with overcoming something in pursuit of 
             software engineering through the eyes of a fallen warrior. Maybe each project is a journey or a game
             in pursuit of achieving something.-->
-            <div class="project-one"> <!--Sharpening the blade. A project that prepares someone for something. Or
-                                        a project that helps you choose a sword based on your personality.-->
-                <img src="./images/Sword.png" alt="A Japanese painting of a katana.">
-                <h2>Katana</h2> <!--Famous Japanese sword forged only by masters.-->
-                <p>After answering a few questions, a specific style of sword will be generated for you to use in battle. It's like
-                    a personality test, but this app helps you choose the best fitting sword for you based on your personality.
-                </p>
-            </div>
-            <div class="project-two"> <!--A fight style application that helps you choose a fight style based on
-                                        your personality. Helps choose new clothes after a defeat.-->
-                <img src="./images/FightingStance.png" alt="A Japanese painting of a Samurai in a fighting stance.">
-                <h2>Dachi</h2> <!--Japanese term for Japanese fighting stances. Balance, power and mobility.-->
-                <p>An app that helps determine which fighting stance is best suited to you based on physical stature, history, age, 
-                    and personality.
-                </p>
-            </div>
-            <div class="project-three"> <!--A project that teaches you have to recover from loss, or after failure. After losing a fight, 
-                                        the application helps you determine what you did wrong and offers guidance to 
-                                        continue forward after defeat. Positive affirmations? Input something negative that happened to 
-                                        you, the project provides words of help to keep you moving forward.-->
-                <img src="./images/FallenWarrior.png" alt="A Japanese painting of a samurai kneeling.">
-                <h2>SevenEight</h2> <!--Fall down seven times, stand up eight. Signify resilience and perserverance.-->
-                <p>"Fall down seven times, stand up eight." In this app, a user will input different negative thoughts and the 
-                    app will provide a positive, motivational affirmation catered to the specific thought to lift the user's spirit.
-                </p>
+            <div class="projects-grid">
+                <div class="project"> <!--Sharpening the blade. A project that prepares someone for something. Or
+                                            a project that helps you choose a sword based on your personality.-->
+                    <img src="./images/Sword.png" alt="A Japanese painting of a katana.">
+                    <h3>Katana</h3> <!--Famous Japanese sword forged only by masters.-->
+                    <p>After answering a few questions, a specific style of sword will be generated for you to use in battle. It's like
+                        a personality test, but this app helps you choose the best fitting sword for you based on your personality.
+                    </p>
+                </div>
+                <div class="project"> <!--A fight style application that helps you choose a fight style based on
+                                            your personality. Helps choose new clothes after a defeat.-->
+                    <img src="./images/FightingStance.png" alt="A Japanese painting of a Samurai in a fighting stance.">
+                    <h3>Dachi</h3> <!--Japanese term for Japanese fighting stances. Balance, power and mobility.-->
+                    <p>An app that helps determine which fighting stance is best suited to you based on physical stature, history, age, 
+                        and personality.
+                    </p>
+                </div>
+                <div class="project"> <!--A project that teaches you have to recover from loss, or after failure. After losing a fight, 
+                                            the application helps you determine what you did wrong and offers guidance to 
+                                            continue forward after defeat. Positive affirmations? Input something negative that happened to 
+                                            you, the project provides words of help to keep you moving forward.-->
+                    <img src="./images/FallenWarrior.png" alt="A Japanese painting of a samurai kneeling.">
+                    <h3>SevenEight</h3> <!--Fall down seven times, stand up eight. Signify resilience and perserverance.-->
+                    <p>"Fall down seven times, stand up eight." In this app, a user will input different negative thoughts and the 
+                        app will provide a positive, motivational affirmation catered to the specific thought to lift the user's spirit.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    <footer>
+
+    <footer class="footer">
         <p>Privacy Policy</p>
         <p>Terms of Use</p>
         <p>Contact Info</p>
